@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>News Website</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        header nav ul li {
+            display: inline;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main Section Styling */
+        section {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 800px;
+        }
+
+        section article {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        section article h2 {
+            margin-top: 0;
+        }
+
+        /* Aside Styling */
+        aside {
+            background: #f9f9f9;
+            padding: 15px;
+            margin: 20px auto;
+            max-width: 800px;
+            border-left: 4px solid #4CAF50;
+        }
+
+        aside h3 {
+            margin-top: 0;
+        }
+
+        aside ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        aside ul li a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        aside ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Daily News</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">World</a></li>
+                <li><a href="#">Technology</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <article>
+            <h2>Headline 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+        </article>
+
+        <article>
+            <h2>Headline 2</h2>
+            <p>Curabitur ac leo nunc. Vestibulum et mauris vel ante finibus maximus nec ut leo.</p>
+        </article>
+    </section>
+
+    <aside>
+        <h3>Related Articles</h3>
+        <ul>
+            <li><a href="#">Article 1</a></li>
+            <li><a href="#">Article 2</a></li>
+        </ul>
+    </aside>
+
+    <footer>
+        <p>&copy; 2024 Daily News</p>
+    </footer>
+</body>
+</html>

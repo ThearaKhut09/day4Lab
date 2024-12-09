@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Canvas Drawing</title>
+    <style>
+        /* Center the canvas and add some spacing */
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        canvas {
+            border: 2px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <h1>Canvas Drawing</h1>
+    <canvas id="myCanvas" width="300" height="300"></canvas>
+
+    <script>
+        // Get the canvas element and its 2D rendering context
+        const canvas = document.getElementById("myCanvas");
+        const ctx = canvas.getContext("2d");
+
+        // Draw a blue rectangle
+        ctx.fillStyle = "blue"; // Set fill color
+        ctx.fillRect(50, 50, 100, 100); // Draw the rectangle at (50, 50) with width and height 100
+
+        // Draw a red circle
+        ctx.beginPath(); // Start a new path
+        ctx.arc(150, 150, 50, 0, 2 * Math.PI); // Center at (150, 150), radius 50
+        ctx.fillStyle = "red"; // Set fill color for the circle
+        ctx.fill(); // Fill the circle
+        ctx.stroke(); // Outline the circle
+    </script>
+</body>
+</html>
